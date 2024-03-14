@@ -2,6 +2,7 @@
 export type RootStackParamList = {
   Landing: undefined; // No parameters expected for the Landing screen
   Register: undefined; // No parameters expected for the Register screen
-  Home: undefined; // Assuming a Home screen without parameters
+  Login: undefined; // Assuming a Home screen without parameters
+  CustomHeader: undefined;
   // Add other screens and their parameters as needed
 };

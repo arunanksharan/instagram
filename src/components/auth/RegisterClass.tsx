@@ -32,7 +32,7 @@ async function signUpNewUser({ email, password, name }: RegisterState) {
   if (error) {
     console.error('Error signing up:', error);
   } else {
-    console.log('Sign up successful:', data);
+    console.log('register 35: Sign up successful:', data);
   }
   return data;
 }
@@ -54,7 +54,7 @@ export class RegisterClass extends Component<RegisterProps, RegisterState> {
     const signUpRes = await signUpNewUser({ email, password, name });
     console.log('signUpRes:', signUpRes);
     if (signUpRes) {
-      this.props.navigation?.navigate('Home'); // Replace 'ThankYouScreen' with your screen name
+      this.props.navigation?.navigate('Landing'); // Replace 'ThankYouScreen' with your screen name
     }
   }
 
